@@ -1,0 +1,9 @@
+---
+layout:	post
+title:	"Words"
+date:	2015-10-20 21:01:30
+categories:	list
+---
+
+-	*Fingerspitzengefühl*: fingertip feeling, feel for detail
+-	*Shokunin*: master
