@@ -6,6 +6,11 @@ categories:	process
 ---
 
 1.	Write dictionary of strings in tab-delimited format
-2.	Convert tabs to commas
-3.	Add single quotes around strings
-4.	Use as input for genline
+2.	Run `fmtlist` to change ` ` to `+`, add double quotes around strings, and print to `stdout`
+3.	To append to flashcard file:
+
+```
+genline `fmtlist $FILE`
+```
+
+4.  Study using `review`
