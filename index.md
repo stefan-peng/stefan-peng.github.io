@@ -4,6 +4,6 @@ My name is Stefan Peng. I am currently a junior in Computer Engineering at Iowa 
 
 ## Contact Information
 
-E-mail: [stefanpeng9@gmail.com](stefanpeng9@gmail.com)
+E-mail: [stefanpeng9@gmail.com](mailto:stefanpeng9@gmail.com)
 
-University e-mail: [sepeng@iastate.edu](sepeng@iastate.edu)
+University e-mail: [sepeng@iastate.edu](mailto:sepeng@iastate.edu)
