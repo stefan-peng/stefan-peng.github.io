@@ -1,4 +1,4 @@
 ---
 title: Projects
 ---
-[Pipelined MIPS processor](./projects/mips)
+[Pipelined MIPS processor](./mips)
