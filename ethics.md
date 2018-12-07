@@ -1,5 +1,6 @@
 ---
 title: Ethics Essay
+author: Stefan Peng
 ---
 
 Ethics are an important part in both one's personal and professional life. An organization's Code of Ethics is necessary both to ensure the safety of the public and to maintain the public's trust. This can be seen in the IEEE Code of Ethics. The first item states that the members of the IEEE commit themselves "...to hold paramount the safety, health, and welfare of the public, to strive to comply with ethical design and sustainable development practices, and to disclose promptly factors that might endanger the public or the environment." In the aerospace industry, this requires that extensive testing take place to ensure that new aircraft are safe for passengers while also striving to be environmentally friendly. In addition, a Code of Ethics also usually strives to foster a supportive and inclusive environment within an organization. This is reflected in other items in the IEEE Code of Ethics and other documents like the Linux Code of Conduct. 
