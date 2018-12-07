@@ -1,0 +1,8 @@
+---
+title: Ethics Essay
+---
+
+Having and following a Code of Ethics is necessary both to ensure the safety of the public and to maintain the public's trust in a professional order. This can be seen in the IEEE Code of Ethics. The first item states that the members of the IEEE commit themselves "...to hold paramount the safety, health, and welfare of the public, to strive to comply with ethical design and sustainable development practices, and to disclose promptly factors that might endanger the public or the environment." In the aerospace industry, for example, this requires that extensive testing take place to ensure that new aircraft are safe for passengers while also striving to be environmentally friendly. In addition, a Code of Ethics also usually strives to foster a supportive and inclusive environment within an organization. This is reflected in other items in the IEEE Code of Ethics and other documents like the Linux Code of Conduct. 
+
+When I am faced with an ethical situation, I first try to make sure I know all the relevant information. This includes facts like who is involved with the decision making process, who is affected by the decision, and what options are available to choose from. Once I feel that I have come up with all the possible solutions, I would consider factors like the amount of good or harm each option would cause. Depending on the situation, I might also look at the rights of those involved or which option treats people the most fairly. Some ethical situations don't have a single perfect solution, but by systematically examing the situation I can at least know that I have done my best to resolve the issue.
+
