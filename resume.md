@@ -71,11 +71,10 @@ title: Resume
 
 # OTHER TECHNICAL ACTIVITIES
 
-+---------------------------------------------------------------------+-------------------------------------------------+
-| -   Senior design: cyber security risk assessment using game theory | -   Group project: React and iOS messaging apps |
-|                                                                     |                                                 |
-| -   Cyber defense competitions (3)                                  | -   Remote control robot in C with Matlab GUI   |
-+---------------------------------------------------------------------+-------------------------------------------------+
+-   Senior design: cyber security risk assessment using game theory
+-   Group project: React and iOS messaging apps
+-   Cyber defense competitions (3)
+-   Remote control robot in C with Matlab GUI
 
 # SKILLS AND EXPERTISE
 
@@ -85,10 +84,9 @@ title: Resume
 
 # HONORS AND AWARDS
 
-+---------------------------------------------------+------------------------------------------------------------+
-| -   Tau Beta Pi (2018**--**Present)               | -   ISU Honors Program (2016**--**Present)                 |
-|                                                   |                                                            |
-| -   Eta Kappa Nu (2019**--**Present)              | -   College of Engineering Dean's List (2016**--**Present) |
-|                                                   |                                                            |
-| -   President's Leadership Class (2016**--**2017) | -   Cardinal Key Honor Society (2020-Present)              |
-+---------------------------------------------------+------------------------------------------------------------+
+-   Tau Beta Pi (2018**--**Present)
+-   ISU Honors Program (2016**--**Present)
+-   Eta Kappa Nu (2019**--**Present)
+-   College of Engineering Dean's List (2016**--**Present)
+-   President's Leadership Class (2016**--**2017)
+-   Cardinal Key Honor Society (2020-Present)
