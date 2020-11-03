@@ -1,3 +1,7 @@
+---
+title: Internships and Research
+---
+
 # Internships
 
 ## Boeing, May 2020-Aug 2020
