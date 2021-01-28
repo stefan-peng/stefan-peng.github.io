@@ -1,7 +1,7 @@
 ---
-title: Compress mp4 Videos Using ffmpeg
-header: Compress mp4 Videos Using ffmpeg
-description: Using ffmpeg to re-encode h264 videos to save space
+title: Compressing mp4's
+header: Compressing mp4's
+description: Using ffmpeg to shrink h264 videos
 permalink: /compress-videos-ffmpeg/
 layout: post
 ---
