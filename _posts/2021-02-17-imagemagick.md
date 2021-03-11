@@ -27,7 +27,7 @@ rm *.tiff
 
 Here's a better way to do it:
 ```
-for i in *.tiff; do convert $i "${i%.*}".png; done
+for i in *.tiff; do convert $i -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "${i%.*}".jpg; done
 ```
 
-The key part, `"${i%.*}"`, expands to the filename without the file extension.
+The key part, `"${i%.*}"`, expands to the filename without the file extension. The other options increase the compression.
