@@ -5,6 +5,8 @@ permalink: /spotify-gpg-arch/
 layout: post
 ---
 
+Latest info from [here](https://joshtronic.com/2020/11/08/problem-importing-keys-for-spotify-on-arch-linux/).
+
 If you are trying to install Spotify on Arch, you might see this:
 
 ```
