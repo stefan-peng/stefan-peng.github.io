@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixing Linux audio quality</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="https://github.com/stefan-peng">GitHub</a>
+        <a href="../contact.html">Contact</a>
+        <h1>Fixing Linux audio quality</h1>
+      </nav>
+    </header>
+
+    <main>
+      <p>2021-02-16</p>
+
+      <p>
+        On my Lenovo Thinkpad T460s, audio under Linux sometimes doesn’t sound
+        as good as under Windows. (There might have been a distro that didn’t
+        have this issue, but I can’t remember which one.) Anyways, here are some
+        tips I have found to improve audio quality in Linux.
+      </p>
+
+      <h2>PulseAudio daemon configuration</h2>
+      <p>
+        From
+        <a
+          href="https://medium.com/@gamunu/enable-high-quality-audio-on-linux-6f16f3fe7e1f"
+          >this site</a
+        >.
+      </p>
+      <div>
+        <div>
+          <pre><code># $HOME/.config/pulse/daemon.conf
+
+default-sample-format = float32le
+default-sample-rate = 96000
+alternate-sample-rate = 48000
+default-sample-channels = 2
+default-channel-map = front-left,front-right
+default-fragments = 2
+default-fragment-size-msec = 125
+resample-method = soxr-vhq
+#remixing-produce-lfe = no
+#remixing-consume-lfe = no
+high-priority = yes
+nice-level = -11
+realtime-scheduling = yes
+realtime-priority = 9
+rlimit-rtprio = 9
+daemonize = no
+</code></pre>
+        </div>
+      </div>
+
+      <h2>Linux kernel configuration</h2>
+      <p>
+        From the
+        <a href="https://wiki.archlinux.org/index.php/Lenovo_ThinkPad_T460s"
+          >Arch wiki</a
+        >.
+      </p>
+      <div>
+        <div>
+          <pre><code># /etc/modprobe.d/modprobe.conf
+
+options snd-hda-intel model=tpt460
+</code></pre>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

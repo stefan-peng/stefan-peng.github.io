@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using XWayland in Sway</title>
+  </head>
+
+  <body>
+    <header>
+      <p></p>
+
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="https://github.com/stefan-peng">GitHub</a>
+        <a href="../contact.html">Contact</a>
+        <h1>Using XWayland in Sway</h1>
+      </nav>
+    </header>
+
+    <main>
+      <p>2021-03-26</p>
+
+      <p>Ran into an issue earlier where I couldn’t open an X app in Sway:</p>
+
+      <div>
+        <div>
+          <pre><code>Gtk-WARNING **: 11:55:33.101: cannot open display: :0
+</code></pre>
+        </div>
+      </div>
+
+      <p>
+        Turns out I had set <code>GDK_BACKEND=wayland</code> in
+        <code>.bashrc</code>, which caused issues with XWayland.
+      </p>
+
+      <p>
+        Solution: don’t set <code>GDK_BACKEND=wayland</code> (as of 2021-03-26).
+      </p>
+    </main>
+  </body>
+</html>

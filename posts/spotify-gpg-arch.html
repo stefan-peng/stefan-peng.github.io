@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Importing Spotify GPG key on Arch</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="https://github.com/stefan-peng">GitHub</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+      <h1>Importing Spotify GPG key on Arch</h1>
+    </header>
+
+    <main>
+      <p>2021-03-25</p>
+
+      <p>
+        Latest info from
+        <a
+          href="https://joshtronic.com/2020/11/08/problem-importing-keys-for-spotify-on-arch-linux/"
+          >here</a
+        >.
+      </p>
+
+      <p>If you are trying to install Spotify on Arch, you might see this:</p>
+
+      <pre><code>:: Importing keys with gpg...
+gpg: keyserver receive failed: Server indicated a failure
+problem importing keys
+</code></pre>
+
+      <p>
+        Manually importing the GPG key from Spotify’s repo seems to fix the
+        problem:
+      </p>
+      <pre><code>curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | gpg --import -
+</code></pre>
+
+      <p>
+        If necessary, update the key URL from the Debian/Ubuntu instructions
+        given <a href="https://www.spotify.com/us/download/linux/">here</a>.
+      </p>
+    </main>
+  </body>
+</html>

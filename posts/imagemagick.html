@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converting images with Imagemagick</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="https://github.com/stefan-peng">GitHub</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+      <h1>Converting images with Imagemagick</h1>
+    </header>
+
+    <main>
+      <p>2021-02-17</p>
+
+      <p>
+        I recently needed to convert a bunch of TIFF files to PNGs. I knew
+        ImageMagick could do it, but couldn’t remember how. As it turns out, it
+        is very straightforward:
+      </p>
+
+      <pre><code>convert input.tiff output.png
+</code></pre>
+
+      <p>
+        To convert multiple files, I ran
+        <code>convert</code> in a loop:
+      </p>
+
+      <pre><code>for i in *.tiff; do convert $i $i.png; done
+</code></pre>
+
+      <p>
+        I’m sure there is some shell magic that can deal with the extensions
+        correctly, but I just used
+        <code>rename</code> to fix them:
+      </p>
+
+      <pre><code>rename .tiff.png .png *.tiff.png
+rm *.tiff
+</code></pre>
+
+      <p><strong>Update 2021-02-17</strong></p>
+
+      <p>Here’s a better way to do it:</p>
+
+      <pre><code>for i in *.tiff; do convert $i -strip -interlace Plane -gaussian-blur 0.05 -quality 85% "${i%.*}".jpg; done
+</code></pre>
+
+      <p>
+        The key part,
+        <code>"${i%.*}"</code>, expands to the filename without the file
+        extension. The other options increase the compression.
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Removing GRUB from MBR</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="https://github.com/stefan-peng">GitHub</a>
+        <a href="../contact.html">Contact</a>
+        <h1>Removing GRUB from MBR</h1>
+      </nav>
+    </header>
+
+    <main>
+      <p>2021-02-15</p>
+
+      <p>
+        This is becoming less relevant as new systems all have UEFI, but if you
+        want to remove GRUB from a system with BIOS, here’s how to do it.
+      </p>
+
+      <ol>
+        <li>Boot into Windows or Windows recovery disk</li>
+        <li>
+          Assuming disk with GRUB is <code>C:\</code>, run the following from an
+          elevated command prompt:
+          <div>
+            <div>
+              <pre><code> bootsect /nt60 C: /mbr
+</code></pre>
+            </div>
+          </div>
+          <p>
+            This will update the Master Boot Record of the drive without
+            affecting the partition table.
+          </p>
+        </li>
+      </ol>
+    </main>
+  </body>
+</html>
