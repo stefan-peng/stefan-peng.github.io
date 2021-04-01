@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compressing mp4's</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Home</a>
+        <a href="./index.html">Blog</a>
+        <a href="../about.html">About</a>
+        <a href="https://github.com/stefan-peng">GitHub</a>
+        <a href="../contact.html">Contact</a>
+        <h1>Compressing mp4's</h1>
+      </nav>
+    </header>
+
+    <main>
+      <p>2021-01-27</p>
+
+      <p>
+        Snippet from
+        <a
+          href="https://unix.stackexchange.com/questions/28803/how-can-i-reduce-a-videos-size-with-ffmpeg"
+          >this page</a
+        >:
+      </p>
+
+
+          <pre
+           
+          ><code> ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4
+</code></pre>
+
+
+      <p>
+        This uses
+        <code>ffmpeg</code> to
+        re-encode an h264 video with the h265 codec with a Constant Rate Factor
+        of 28 (lower number = higher bitrate).
+      </p>
+    </main>
+  </body>
+</html>
