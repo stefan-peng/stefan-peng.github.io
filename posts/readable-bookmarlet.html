@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Readable bookmarklet</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./index.html">Blog</a>
+            <a href="../about.html">About</a>
+            <a href="https://github.com/stefan-peng">GitHub</a>
+            <a href="../contact.html">Contact</a>
+            <h1>Readable bookmarklet</h1>
+        </nav>
+    </header>
+
+    <main>
+        <p>2022-06-05</p>
+
+        <p>
+            Original bookmarklet from here:
+            <a href="https://www.arp242.net/bookmarklets.html">https://www.arp242.net/bookmarklets.html</a>.
+        </p>
+
+
+        <pre>
+            <code>
+                javascript:(function() {
+                    document.querySelectorAll('p, li, div').forEach(function(n) {
+                        n.style.color = '#000';
+                        n.style.font = '500 32px/1.7em sans-serif';
+                        n.style.maxWidth = '30em';
+                        n.style.marginLeft = 'auto';
+                        n.style.marginRight = 'auto';
+                    });
+                })();
+            </code>
+        </pre>
+
+
+        <p>
+            Original bookmarklet adjusts font size, color. Modified to increase font size, set a max width, and center
+            text on page.
+        </p>
+    </main>
+</body>
+
+</html>
